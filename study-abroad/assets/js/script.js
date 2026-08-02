@@ -7,7 +7,7 @@
      * Replace this URL when you deploy your own Google Apps Script.
      */
     endpoint:
-      'https://script.google.com/macros/s/AKfycbwGVNYc4scLaZdQ2Z7Bbjfwf_7wexxdD5u8SN3Sa7D0kE4qHR7ufM5Dc_phXyp7AJjI-A/exec',
+      'https://script.google.com/macros/s/AKfycbw-HOftjFnVmfT5yzvJ3sqf7Q-qARkvIVbrEMFaELKNwaAko1cbIC1ylEZE13M2eVe_xQ/exec',
 
     thankYouPage: 'thank-you.html',
 
