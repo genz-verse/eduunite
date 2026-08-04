@@ -1627,7 +1627,7 @@ footer.site {
 
 .footer-bottom {
   border-top: 1px solid var(--line);
-  padding: 20px 0;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2565,7 +2565,7 @@ footer.site {
 
   .nav-shell {
     min-height: 70px;
-    padding: 12px 0;
+    padding: 15px;
   }
 
   .brand .logo svg {
