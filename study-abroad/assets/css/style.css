@@ -985,7 +985,7 @@ header.site {
 
 @media (max-width: 620px) {
   .study-hero .wrap {
-    width: min(100% - 28px, 1180px);
+    width: auto;
   }
 
   .study-hero__media {
