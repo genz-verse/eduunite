@@ -1010,9 +1010,8 @@ header.site {
   }
 
   .study-hero__content h1 {
-    font-size: clamp(36px, 10.5vw, 48px);
-    line-height: 1.04;
-    letter-spacing: -2px;
+     line-height: normal;
+     letter-spacing: 0px;
   }
 
   .study-hero__description {
