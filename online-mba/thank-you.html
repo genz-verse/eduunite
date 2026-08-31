@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Thank You | EduUnite</title>
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        :root {
+            --navy: #101b36;
+            --navy-dark: #09162f;
+            --orange: #ff6a2e;
+            --orange-dark: #e9561f;
+            --muted: #697386;
+            --line: #e7ebf2;
+            --bg: #f4f7fb;
+            --white: #ffffff;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            margin: 0;
+
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+
+            font-family:
+                "Plus Jakarta Sans",
+                sans-serif;
+
+            color: var(--navy);
+
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(255, 106, 46, 0.08),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 85% 75%,
+                    rgba(16, 27, 54, 0.06),
+                    transparent 30%
+                ),
+                var(--bg);
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ========================================
+           HEADER
+        ======================================== */
+
+        .header {
+            width: 100%;
+
+            padding: 20px 30px;
+
+            background: rgba(255, 255, 255, 0.92);
+
+            border-bottom:
+                1px solid var(--line);
+
+            backdrop-filter: blur(12px);
+        }
+
+
+        .header-inner {
+            width: min(1180px, 100%);
+
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .logo {
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: -1px;
+
+            color: #111111;
+        }
+
+
+        .logo span {
+            color: var(--orange);
+        }
+
+
+        .home-link {
+            color: var(--navy);
+
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+
+        .home-link:hover {
+            color: var(--orange);
+        }
+
+
+        /* ========================================
+           MAIN
+        ======================================== */
+
+        .thank-you-main {
+            flex: 1;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 55px 22px;
+        }
+
+
+        .thank-you-card {
+            position: relative;
+
+            width: min(620px, 100%);
+
+            padding: 55px 45px;
+
+            overflow: hidden;
+
+            background: var(--white);
+
+            border:
+                1px solid rgba(16, 27, 54, 0.08);
+
+            border-radius: 26px;
+
+            text-align: center;
+
+            box-shadow:
+                0 25px 65px
+                rgba(16, 27, 54, 0.10);
+        }
+
+
+        .thank-you-card::before {
+            content: "";
+
+            position: absolute;
+
+            top: -110px;
+            right: -100px;
+
+            width: 240px;
+            height: 240px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 106, 46, 0.07);
+        }
+
+
+        .thank-you-card::after {
+            content: "";
+
+            position: absolute;
+
+            bottom: -120px;
+            left: -110px;
+
+            width: 250px;
+            height: 250px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(16, 27, 54, 0.035);
+        }
+
+
+        /* ========================================
+           SUCCESS ICON
+        ======================================== */
+
+        .success-icon {
+            position: relative;
+            z-index: 2;
+
+            width: 82px;
+            height: 82px;
+
+            margin:
+                0 auto 26px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(255, 106, 46, 0.10);
+
+            border:
+                1px solid
+                rgba(255, 106, 46, 0.18);
+        }
+
+
+        .success-icon-inner {
+            width: 55px;
+            height: 55px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: var(--orange);
+
+            color: #ffffff;
+
+            box-shadow:
+                0 10px 24px
+                rgba(255, 106, 46, 0.28);
+        }
+
+
+        .success-icon svg {
+            width: 27px;
+            height: 27px;
+
+            fill: none;
+
+            stroke: currentColor;
+
+            stroke-width: 2.3;
+
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+
+        /* ========================================
+           CONTENT
+        ======================================== */
+
+        .eyebrow {
+            position: relative;
+            z-index: 2;
+
+            margin-bottom: 10px;
+
+            color: var(--orange);
+
+            font-size: 11px;
+            font-weight: 800;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+        }
+
+
+        h1 {
+            position: relative;
+            z-index: 2;
+
+            max-width: 500px;
+
+            margin:
+                0 auto 16px;
+
+            color: var(--navy);
+
+            font-size:
+                clamp(31px, 5vw, 43px);
+
+            line-height: 1.12;
+
+            letter-spacing: -1.5px;
+        }
+
+
+        .description {
+            position: relative;
+            z-index: 2;
+
+            max-width: 485px;
+
+            margin:
+                0 auto 29px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            line-height: 1.75;
+        }
+
+
+        /* ========================================
+           NEXT STEP
+        ======================================== */
+
+        .next-step {
+            position: relative;
+            z-index: 2;
+
+            margin-bottom: 29px;
+
+            padding: 18px 20px;
+
+            display: flex;
+            align-items: flex-start;
+
+            gap: 13px;
+
+            background: #f8fafc;
+
+            border:
+                1px solid var(--line);
+
+            border-radius: 15px;
+
+            text-align: left;
+        }
+
+
+        .next-step-icon {
+            flex: 0 0 38px;
+
+            width: 38px;
+            height: 38px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 10px;
+
+            background:
+                rgba(255, 106, 46, 0.10);
+
+            color: var(--orange);
+        }
+
+
+        .next-step-icon svg {
+            width: 19px;
+            height: 19px;
+
+            fill: none;
+
+            stroke: currentColor;
+
+            stroke-width: 1.8;
+
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+
+        .next-step strong {
+            display: block;
+
+            margin-bottom: 4px;
+
+            color: var(--navy);
+
+            font-size: 13px;
+        }
+
+
+        .next-step p {
+            margin: 0;
+
+            color: var(--muted);
+
+            font-size: 11.5px;
+
+            line-height: 1.6;
+        }
+
+
+        /* ========================================
+           BUTTONS
+        ======================================== */
+
+        .buttons {
+            position: relative;
+            z-index: 2;
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            gap: 11px;
+        }
+
+
+        .btn {
+            min-height: 48px;
+
+            padding: 0 23px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            transition:
+                transform .2s ease,
+                background .2s ease,
+                border-color .2s ease;
+        }
+
+
+        .btn-primary {
+            background: var(--orange);
+
+            color: #ffffff;
+
+            box-shadow:
+                0 11px 24px
+                rgba(255, 106, 46, 0.23);
+        }
+
+
+        .btn-primary:hover {
+            background:
+                var(--orange-dark);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        .btn-secondary {
+            border:
+                1px solid
+                #d8dee8;
+
+            background: #ffffff;
+
+            color: var(--navy);
+        }
+
+
+        .btn-secondary:hover {
+            border-color:
+                var(--navy);
+
+            transform:
+                translateY(-2px);
+        }
+
+
+        /* ========================================
+           FOOTER
+        ======================================== */
+
+        .footer {
+            padding: 20px;
+
+            color: #8991a0;
+
+            font-size: 11px;
+
+            text-align: center;
+        }
+
+
+        /* ========================================
+           MOBILE
+        ======================================== */
+
+        @media (max-width: 600px) {
+
+            .header {
+                padding:
+                    16px 20px;
+            }
+
+
+            .logo {
+                font-size: 23px;
+            }
+
+
+            .home-link {
+                font-size: 11px;
+            }
+
+
+            .thank-you-main {
+                padding:
+                    35px 16px;
+            }
+
+
+            .thank-you-card {
+                padding:
+                    38px
+                    20px;
+
+                border-radius:
+                    20px;
+            }
+
+
+            .success-icon {
+                width: 72px;
+                height: 72px;
+
+                margin-bottom:
+                    21px;
+            }
+
+
+            .success-icon-inner {
+                width: 49px;
+                height: 49px;
+            }
+
+
+            h1 {
+                font-size:
+                    30px;
+            }
+
+
+            .description {
+                font-size:
+                    13px;
+            }
+
+
+            .next-step {
+                padding:
+                    16px;
+            }
+
+
+            .buttons {
+                flex-direction:
+                    column;
+            }
+
+
+            .btn {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="index.html"
+                class="logo">
+
+                <span>Edu</span>Unite
+
+            </a>
+
+
+            <a href="index.html"
+                class="home-link">
+
+                Back to Home
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         THANK YOU
+    ========================================= -->
+
+    <main class="thank-you-main">
+
+        <div class="thank-you-card">
+
+
+            <!-- Success Icon -->
+
+            <div class="success-icon">
+
+                <div class="success-icon-inner">
+
+                    <svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <path
+                            d="m5 12 4 4L19 6">
+                        </path>
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+
+
+            <p class="eyebrow">
+                Enquiry Submitted Successfully
+            </p>
+
+
+            <h1>
+                Thank You for Connecting with EduUnite!
+            </h1>
+
+
+            <p class="description">
+                We've received your details.
+                Our Online MBA counsellor will connect
+                with you to understand your preferences
+                and help you explore suitable universities,
+                specialisations and programme options.
+            </p>
+
+
+
+            <!-- What Happens Next -->
+
+            <div class="next-step">
+
+                <div class="next-step-icon">
+
+                    <svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+
+                        <path
+                            d="M4 13a8 8 0 0 1 16 0">
+                        </path>
+
+                        <rect
+                            x="3"
+                            y="13"
+                            width="4"
+                            height="6"
+                            rx="1.5">
+                        </rect>
+
+                        <rect
+                            x="17"
+                            y="13"
+                            width="4"
+                            height="6"
+                            rx="1.5">
+                        </rect>
+
+                    </svg>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        What happens next?
+                    </strong>
+
+                    <p>
+                        Our counsellor will review your
+                        enquiry and connect with you to
+                        discuss suitable Online MBA options.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Buttons -->
+
+            <div class="buttons">
+
+                <a href="index.html"
+                    class="btn btn-primary">
+
+                    Explore Online MBA
+
+                    <span>→</span>
+
+                </a>
+
+
+                <a href="tel:+919355907407"
+                    class="btn btn-secondary">
+
+                    Talk to a Counsellor
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        © 2026 EduUnite. All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
