@@ -76,6 +76,7 @@
     }
     </script>
 
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -4829,37 +4830,37 @@
 
     <script>
         // ====== Nav toggle ======
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinksWrapper = document.querySelector('.nav-links-wrapper');
-        const toggleIconEl = navToggle.querySelector('i');
-        navToggle.addEventListener('click', () => {
-            const isExpanded = navLinksWrapper.classList.toggle('active');
-            navToggle.setAttribute('aria-expanded', isExpanded);
-            if (isExpanded) { toggleIconEl.classList.replace('fa-bars', 'fa-times'); }
-            else { toggleIconEl.classList.replace('fa-times', 'fa-bars'); }
-        });
-        navLinksWrapper.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinksWrapper.classList.contains('active')) {
-                    navLinksWrapper.classList.remove('active');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                    toggleIconEl.classList.replace('fa-times', 'fa-bars');
-                }
-            });
-        });
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-            toggle.addEventListener('click', (e) => {
-                e.stopPropagation();
-                const menu = toggle.nextElementSibling;
-                document.querySelectorAll('.dropdown-menu.show').forEach(m => { if (m !== menu) m.classList.remove('show'); });
-                if (menu) menu.classList.toggle('show');
-            });
-        });
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-item.dropdown')) {
-                document.querySelectorAll('.dropdown-menu.show').forEach(m => m.classList.remove('show'));
-            }
-        });
+        // const navToggle = document.querySelector('.nav-toggle');
+        // const navLinksWrapper = document.querySelector('.nav-links-wrapper');
+        // const toggleIconEl = navToggle.querySelector('i');
+        // navToggle.addEventListener('click', () => {
+        //     const isExpanded = navLinksWrapper.classList.toggle('active');
+        //     navToggle.setAttribute('aria-expanded', isExpanded);
+        //     if (isExpanded) { toggleIconEl.classList.replace('fa-bars', 'fa-times'); }
+        //     else { toggleIconEl.classList.replace('fa-times', 'fa-bars'); }
+        // });
+        // navLinksWrapper.querySelectorAll('a').forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         if (navLinksWrapper.classList.contains('active')) {
+        //             navLinksWrapper.classList.remove('active');
+        //             navToggle.setAttribute('aria-expanded', 'false');
+        //             toggleIconEl.classList.replace('fa-times', 'fa-bars');
+        //         }
+        //     });
+        // });
+        // document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+        //     toggle.addEventListener('click', (e) => {
+        //         e.stopPropagation();
+        //         const menu = toggle.nextElementSibling;
+        //         document.querySelectorAll('.dropdown-menu.show').forEach(m => { if (m !== menu) m.classList.remove('show'); });
+        //         if (menu) menu.classList.toggle('show');
+        //     });
+        // });
+        // document.addEventListener('click', (e) => {
+        //     if (!e.target.closest('.nav-item.dropdown')) {
+        //         document.querySelectorAll('.dropdown-menu.show').forEach(m => m.classList.remove('show'));
+        //     }
+        // });
         // document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // ====== Global state & Metadata ======
